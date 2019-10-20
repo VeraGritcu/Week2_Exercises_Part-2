@@ -32,18 +32,23 @@ namespace Week2_Exercises_Part2
 
             //7.Find common elements between two arrays of integers.
 
-            int[] array2 = new int[] { 4, 5, 6, 7, 8 };
+            //int[] array2 = new int[] { 4, 5, 6, 7, 8 };
             //FindCommonElements(array, array2);
 
 
             //8.Copy elements from an array into another
+            DuplicateArray(array);
+
+        }
+
+        private static void DuplicateArray(int[] array)
+        {
             int[] newArray = new int[array.Length];
-            for (int i = 0,j=0; i < array.Length; i++,j++)
+            for (int i = 0, j = 0; i < array.Length; i++, j++)
             {
                 newArray[j] = array[i];
                 Console.Write(newArray[j]);
             }
-
         }
 
         private static void FindCommonElements(int[] array, int[] array2)
